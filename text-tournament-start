@@ -1,0 +1,21 @@
+#include "main.h"
+using namespace std;
+
+void setupPlayerStats(string &name, int &str, int &def, int &armor, int &skill, int &wins);
+void savePlayerStats(string name, int str, int def, int armor, int skill, int wins);
+
+int main() {
+
+}
+
+void setupPlayerStats(string &name, int &str, int &def, int &armor, int &skill, int &wins) {
+
+    // TODO: Load the character's file or create a new character.
+
+}
+
+void savePlayerStats(string name, int str, int def, int armor, int skill, int wins) {
+
+    // TODO: Save the player's stats to a file.
+
+}
