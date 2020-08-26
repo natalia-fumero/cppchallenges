@@ -1,0 +1,18 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+void getString(string &input);
+
+int main() {
+    string input = "Starting Value";
+    getString(input);
+    cout << input << endl;
+    return 0;
+}
+
+void getString(string &input) {
+    cout << "Type a string:" << endl;
+    getline(cin, input);
+    cout << input << endl;
+}
