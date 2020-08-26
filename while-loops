@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    bool guessed = false;
+    while (!guessed) {
+        int guess;
+        cout << "How many leaves are on the tree?" << endl;
+        cin >> guess;
+        if (guess == 14)
+            guessed = true;
+    }
+    cout << "You guessed correctly!" << endl;
+    return 0;
+}
