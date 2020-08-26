@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+void getString(string* pointer);
+
+int main() {
+    string input = "Starting Value";
+    string* pointer;
+    pointer = &input;
+    cout << pointer << endl;
+    cout << *pointer << endl;
+    getString(pointer);
+    cout << input << endl;
+    return 0;
+}
+
+void getString(string* pointer) {
+    cout << "Type a string:" << endl;
+    getline(cin, *pointer);
+    cout << pointer << endl;
+}
