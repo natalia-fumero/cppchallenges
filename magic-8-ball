@@ -1,0 +1,46 @@
+#include <iostream> 
+using namespace std; 
+#include <cstdlib> 
+
+int main() { 
+  int shaker = rand()%9; 
+
+  cout<<"Welcome to my Magic 8 Ball Game"<<endl; 
+  cout<<"Press g to get and anything else to stop"<<endl; 
+  char answer; 
+  cin>>answer; 
+
+  while(answer == 'g'){ 
+    if(shaker==0){ 
+    cout<<"You're lucky today"<<endl; 
+  } 
+  if(shaker==1){  
+    cout<<"It's gonna rain today"<<endl; 
+  } 
+  if(shaker==2){ 
+    cout<<"You may win the lotto sometime in your life"<<endl; 
+  } 
+  if(shaker==3){ 
+    cout<<"Your friend will tell a funny joke"<<endl;
+  } 
+
+  if(shaker==4){  
+    cout<<"Your code will work on the first run someday"<<endl; 
+  }   
+  if(shaker==5){ 
+    cout<<"You're lucky today"<<endl; 
+  } 
+  if(shaker==6){ 
+    cout<<"Your code will work and you won't know why"<<endl;   
+  } 
+  if(shaker==7){ 
+    cout<<"You'll find a cupon in your purse"<<endl; 
+  } 
+  if(shaker==8){ 
+    cout<<"You'll remember your Netflix password today"<<endl; 
+  } 
+  shaker = rand()%9; 
+  cin>>answer; 
+  } 
+
+} 
